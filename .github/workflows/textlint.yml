@@ -35,4 +35,4 @@ jobs:
       - name: Danger JS Action
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: yarn danger ci --ignoreOutOfDiffComments
+        run: yarn danger ci
