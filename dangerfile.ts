@@ -35,6 +35,8 @@ async function lint() {
               break
           }
         })
+
+        sleep()
       })
 
       console.log(engine.formatResults(results))
@@ -43,3 +45,5 @@ async function lint() {
 
   message('end dangerfile.ts')
 }
+
+const sleep = (ms = 1000) => new Promise(resolve => setTimeout(resolve, ms))
