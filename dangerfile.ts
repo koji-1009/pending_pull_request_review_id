@@ -1,13 +1,13 @@
 import { danger, message, warn } from 'danger'
 import { TextLintEngine } from 'textlint'
 
-message('start dangerfile.ts')
+export default async () => {
+  await lint();
+}
 
-lint()
+async function lint() {
+  message('start dangerfile.ts')
 
-message('end dangerfile.ts')
-
-function lint() {
   const editFiles = danger.git.modified_files.filter(e => !danger.git.deleted_files.includes(e))
   const createFiles = danger.git.created_files
   const files = [...editFiles, ...createFiles]
@@ -40,4 +40,6 @@ function lint() {
       console.log(engine.formatResults(results))
     }
   })
+
+  message('end dangerfile.ts')
 }
