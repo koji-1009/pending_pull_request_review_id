@@ -46,4 +46,4 @@ async function lint() {
   message('end dangerfile.ts')
 }
 
-const sleep = (ms = 1000) => new Promise(resolve => setTimeout(resolve, ms))
+const sleep = (ms = 5000) => new Promise(resolve => setTimeout(resolve, ms))
