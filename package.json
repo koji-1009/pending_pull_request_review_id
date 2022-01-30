@@ -6,9 +6,9 @@
   "author": "Koji Wakamiya <koji.wakamiya@gmail.com>",
   "license": "MIT",
   "devDependencies": {
-    "danger": "^10.7.1",
-    "textlint": "^12.0.2",
+    "danger": "^10.9.0",
+    "textlint": "^12.1.0",
     "textlint-rule-no-todo": "^2.0.1",
-    "typescript": "^4.5.2"
+    "typescript": "^4.5.5"
   }
 }
